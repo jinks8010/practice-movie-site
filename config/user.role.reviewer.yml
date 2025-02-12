@@ -1,0 +1,13 @@
+uuid: 3f3db9e3-940e-4a9d-a75b-738bf4b981f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: reviewer
+label: Reviewer
+weight: 4
+is_admin: false
+permissions:
+  - 'edit own comments'
+  - 'post comments'

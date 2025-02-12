@@ -1,0 +1,11 @@
+uuid: 33ca2188-9c7e-403c-9cb4-3c18c85dcdc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.embedded_video
+label: 'Embedded Video'
+description: ''
+targetEntityType: comment
+cache: true

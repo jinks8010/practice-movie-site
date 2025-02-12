@@ -1,0 +1,29 @@
+uuid: 89cac567-8cd4-44ac-abd2-a2dbfc3086cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_trailer
+    - media.type.movie_trailer
+    - node.type.movie
+id: node.movie.field_movie_trailer
+field_name: field_movie_trailer
+entity_type: node
+bundle: movie
+label: 'Movie trailer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      movie_trailer: movie_trailer
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,233 @@
+uuid: 7e54a808-609c-4902-a773-b7f3445cc7d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_movie_title
+    - field.field.node.movie.field_movie_trailer
+    - field.field.node.movie.field_poster_image
+    - field.field.node.movie.field_rate
+    - field.field.node.movie.field_release_year
+    - node.type.movie
+  module:
+    - comment
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          d5fde516-3429-4ad3-8d2b-18f6f7de9e22:
+            uuid: d5fde516-3429-4ad3-8d2b-18f6f7de9e22
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_poster_image'
+              label: 'Poster Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2cf27549-8969-4bad-93b7-ef28f7402f34:
+            uuid: 2cf27549-8969-4bad-93b7-ef28f7402f34
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_movie_title'
+              label: 'Movie Title'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ce7ccbb3-bccd-4ac7-befa-2b8cf251bdf2:
+            uuid: ce7ccbb3-bccd-4ac7-befa-2b8cf251bdf2
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_release_year'
+              label: 'Release Year'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          9b63b92c-5d0a-4052-9e85-ea8788449c67:
+            uuid: 9b63b92c-5d0a-4052-9e85-ea8788449c67
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d2639c29-6f82-4ed4-9319-b782523ff55e:
+            uuid: d2639c29-6f82-4ed4-9319-b782523ff55e
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_genre'
+              label: Genre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          4fe2a85e-de51-4f25-8225-5589c196c1ec:
+            uuid: 4fe2a85e-de51-4f25-8225-5589c196c1ec
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_movie_trailer'
+              label: 'Movie trailer'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          f609945e-9d27-4d74-892a-07984a659e48:
+            uuid: f609945e-9d27-4d74-892a-07984a659e48
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_rate'
+              label: Rate
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_movie_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_poster_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_rate:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_release_year:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movie_trailer: true

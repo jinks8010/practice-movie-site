@@ -1,0 +1,27 @@
+uuid: cbe60615-c75b-4647-886a-0be332dd2523
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.movie_trailer.field_media_oembed_video_1
+    - media.type.movie_trailer
+id: media.movie_trailer.media_library
+targetEntityType: media
+bundle: movie_trailer
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_oembed_video_1: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: 840626f3-2ca9-48ad-bd9c-54ab53a23d5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movie_editor
+  module:
+    - user
+id: user_add_role_action.movie_editor
+label: 'Add the Movie Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: movie_editor

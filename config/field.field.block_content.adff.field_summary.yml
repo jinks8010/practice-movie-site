@@ -1,0 +1,19 @@
+uuid: e4ecc5b3-717a-4658-93e2-0c56e0b85e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.adff
+    - field.storage.block_content.field_summary
+id: block_content.adff.field_summary
+field_name: field_summary
+entity_type: block_content
+bundle: adff
+label: SUMMARY
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: 8dd1b989-5bb7-4752-82e3-5ba0f1b4765b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.movie_trailer.field_media_oembed_video_1
+    - media.type.movie_trailer
+  module:
+    - media
+id: media.movie_trailer.default
+targetEntityType: media
+bundle: movie_trailer
+mode: default
+content:
+  field_media_oembed_video_1:
+    type: oembed
+    label: visually_hidden
+    settings:
+      max_width: 0
+      max_height: 0
+      loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

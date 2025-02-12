@@ -1,0 +1,29 @@
+uuid: 2e8be244-f3d2-4504-83b2-8ff9c71c5e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.similar_movies_header
+    - field.field.block_content.similar_movies_header.field_header
+id: block_content.similar_movies_header.default
+targetEntityType: block_content
+bundle: similar_movies_header
+mode: default
+content:
+  field_header:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

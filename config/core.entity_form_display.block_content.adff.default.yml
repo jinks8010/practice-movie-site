@@ -1,0 +1,42 @@
+uuid: 16d1f0bf-60e7-4f86-a740-c81d36be0df4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.adff
+    - field.field.block_content.adff.body
+    - field.field.block_content.adff.field_summary
+  module:
+    - text
+id: block_content.adff.default
+targetEntityType: block_content
+bundle: adff
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_summary:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

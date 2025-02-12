@@ -1,0 +1,38 @@
+uuid: c04f374e-3e73-4364-9303-250304257484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poster_image
+    - node.type.movie
+  module:
+    - image
+id: node.movie.field_poster_image
+field_name: field_poster_image
+entity_type: node
+bundle: movie
+label: 'Poster Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: '10 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 16196d1e-484a-4419-8787-769aef793218
+    alt: 'Poster Image'
+    title: 'Poster Image'
+    width: 612
+    height: 490
+field_type: image

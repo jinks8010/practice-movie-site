@@ -1,0 +1,37 @@
+uuid: 1f8be769-5fb3-488e-a13c-2611030fe5ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.watchlist.field_field_movies
+    - field.field.node.watchlist.field_field_user
+    - node.type.watchlist
+  module:
+    - user
+id: node.watchlist.default
+targetEntityType: node
+bundle: watchlist
+mode: default
+content:
+  field_field_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_field_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

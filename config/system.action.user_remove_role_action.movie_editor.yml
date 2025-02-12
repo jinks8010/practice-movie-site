@@ -1,0 +1,14 @@
+uuid: c7fa98bf-2604-42d3-bb57-dcbe30d732d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movie_editor
+  module:
+    - user
+id: user_remove_role_action.movie_editor
+label: 'Remove the Movie Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: movie_editor

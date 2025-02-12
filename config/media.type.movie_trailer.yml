@@ -1,0 +1,16 @@
+uuid: 4777fd9d-165f-4ee1-9b4d-b17a5ead2834
+langcode: en
+status: true
+dependencies: {  }
+id: movie_trailer
+label: 'Movie trailer'
+description: ''
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_video_1
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
+  providers:
+    - YouTube
+field_map: {  }

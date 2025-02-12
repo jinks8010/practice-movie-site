@@ -1,0 +1,29 @@
+uuid: 9ee52838-0305-4001-a1a2-916825ebd4d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_user
+    - node.type.watchlist
+id: node.watchlist.field_field_user
+field_name: field_field_user
+entity_type: node
+bundle: watchlist
+label: field_user
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

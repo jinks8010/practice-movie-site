@@ -1,0 +1,21 @@
+uuid: 971a798a-5b50-491a-b656-f06e4d58a5a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.similar_movies_header
+    - field.field.block_content.similar_movies_header.field_header
+id: block_content.similar_movies_header.default
+targetEntityType: block_content
+bundle: similar_movies_header
+mode: default
+content:
+  field_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

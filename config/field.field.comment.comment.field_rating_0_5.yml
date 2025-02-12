@@ -1,0 +1,23 @@
+uuid: 8906a1fd-31e8-4f43-a722-709422d09e04
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_rating_0_5
+id: comment.comment.field_rating_0_5
+field_name: field_rating_0_5
+entity_type: comment
+bundle: comment
+label: 'Rating (0-5)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 5.0
+  prefix: ''
+  suffix: ''
+field_type: float

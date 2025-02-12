@@ -1,0 +1,49 @@
+uuid: 0afaf9c6-104b-49f0-a0e6-268587d55561
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mini_movie_card
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_movie_title
+    - field.field.node.movie.field_movie_trailer
+    - field.field.node.movie.field_poster_image
+    - field.field.node.movie.field_rate
+    - field.field.node.movie.field_release_year
+    - node.type.movie
+  module:
+    - image
+    - user
+id: node.movie.mini_movie_card
+targetEntityType: node
+bundle: movie
+mode: mini_movie_card
+content:
+  field_poster_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_release_year:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_description: true
+  field_genre: true
+  field_movie_title: true
+  field_movie_trailer: true
+  field_rate: true
+  links: true

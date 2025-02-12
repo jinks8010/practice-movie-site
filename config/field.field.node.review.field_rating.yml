@@ -1,0 +1,23 @@
+uuid: 78d8080f-487b-42c0-8f6b-d81fa0986792
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.review
+id: node.review.field_rating
+field_name: field_rating
+entity_type: node
+bundle: review
+label: Rating
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 5.0
+  prefix: ''
+  suffix: ''
+field_type: float

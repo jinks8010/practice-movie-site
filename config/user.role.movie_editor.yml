@@ -1,0 +1,21 @@
+uuid: 82be4fce-a021-4daf-8929-8b3195f3ea61
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie
+    - node.type.review
+  module:
+    - node
+    - toolbar
+id: movie_editor
+label: 'Movie Editor'
+weight: 5
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create movie content'
+  - 'create review content'
+  - 'delete own movie content'
+  - 'edit own movie content'
