@@ -1,0 +1,14 @@
+uuid: fe862ee1-7b2e-4818-bba5-faba8284c3df
+langcode: en
+status: true
+dependencies: {  }
+name: movie_poster_medium
+label: Movie-poster-medium
+effects:
+  82d92359-b1c9-4189-ad05-ea6499bfd788:
+    uuid: 82d92359-b1c9-4189-ad05-ea6499bfd788
+    id: image_resize
+    weight: 1
+    data:
+      width: 600
+      height: 850

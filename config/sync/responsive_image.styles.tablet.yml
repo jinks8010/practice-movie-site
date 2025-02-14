@@ -1,0 +1,11 @@
+uuid: d78f3dfc-2f9e-4a76-8db1-6bb55a66b904
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.movie_poster_medium
+id: tablet
+label: Tablet
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: movie_poster_medium

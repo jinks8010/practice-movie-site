@@ -1,0 +1,11 @@
+uuid: 9ba267fe-92ec-4f19-a153-2a11bc604284
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.movie_poster_large
+id: desktop
+label: Desktop
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: movie_poster_large

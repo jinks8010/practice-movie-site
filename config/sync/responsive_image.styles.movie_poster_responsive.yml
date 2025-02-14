@@ -1,0 +1,23 @@
+uuid: d9c0fc79-0d2d-40bb-9f6a-4ee0cc896729
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.movie_poster_large
+    - image.style.movie_poster_medium
+    - image.style.movie_poster_small
+id: movie_poster_responsive
+label: 'Movie Poster Responsive'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - movie_poster_large
+        - movie_poster_medium
+        - movie_poster_small
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: movie_poster_small
