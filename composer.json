@@ -25,6 +25,9 @@
         "drupal/core-recommended": "^11.1",
         "drupal/devel": "^5.3",
         "drupal/flag": "^4.0@beta",
+        "drupal/pathauto": "^1.13",
+        "drupal/search_api": "^1.37",
+        "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.3"
     },
     "conflict": {

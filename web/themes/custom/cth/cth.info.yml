@@ -1,0 +1,15 @@
+name: Custom Theme
+description: Custom theme for movie-site
+
+type: theme
+
+core_version_requirement: ^9 || ^10
+
+base theme: false
+
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
