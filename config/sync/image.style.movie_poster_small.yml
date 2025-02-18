@@ -1,0 +1,14 @@
+uuid: 50125c9a-fa9b-4f2b-ac69-0085869a0668
+langcode: en
+status: true
+dependencies: {  }
+name: movie_poster_small
+label: Movie-poster-small
+effects:
+  45f1948c-e55b-4543-b37a-a9ce76df1dae:
+    uuid: 45f1948c-e55b-4543-b37a-a9ce76df1dae
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 500

@@ -1,0 +1,14 @@
+name: Custom Theme
+description: Custom theme for movie-site
+
+type: theme
+
+core_version_requirement: ^10 || ^11
+
+base theme: classy
+
+
+
+
+
+
