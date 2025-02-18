@@ -5,9 +5,14 @@ type: theme
 
 core_version_requirement: ^10 || ^11
 
-base theme: classy
+base theme: olivero
 
-
+regions:
+  header: 'Header'
+  content: 'Content'
+  content_bottom: 'Content (bottom)'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
 
 
 
