@@ -3,13 +3,12 @@ description: Custom theme for movie-site
 
 type: theme
 
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^10 || ^11
 
-base theme: false
+base theme: classy
 
-regions:
-  header: 'Header'
-  highlighted: 'Highlighted'
-  content: 'Content'
-  sidebar: 'Sidebar'
-  footer: 'Footer'
+
+
+
+
+
