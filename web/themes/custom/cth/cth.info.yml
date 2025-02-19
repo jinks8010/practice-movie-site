@@ -14,6 +14,11 @@ regions:
   sidebar: 'Sidebar'
   footer: 'Footer'
 
+settings:
+  custom_footer_text: 'Default Footer Text'
+  custom_bg_color: '#ffffff'
+  enable_dark_mode: false
+
 
 
 
