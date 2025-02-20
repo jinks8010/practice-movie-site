@@ -10,6 +10,31 @@ function cth_preprocess_page(&$variables) {
   // Pass custom background color to the template.
   $variables['custom_bg_color'] = theme_get_setting('custom_bg_color');
 
-  // Pass dark mode setting to the template.
-  $variables['enable_dark_mode'] = theme_get_setting('enable_dark_mode');
+  $enable_dark_mode = theme_get_setting('enable_dark_mode');
+  $variables['enable_dark_mode'] = $enable_dark_mode;
+
+  // Add dark mode class dynamically.
+  $variables['body_classes'] = $enable_dark_mode ? 'dark-mode' : 'light-mode';
+
+  
+  $variables['site_tagline'] = "Your Ultimate Movie Guide 🎥";
+
+  // Random movie quote
+  $quotes = [
+    "May the Force be with you. – Star Wars",
+    "I'll be back. – Terminator",
+    "To infinity and beyond! – Toy Story",
+    "Why so serious? – The Dark Knight",
+  ];
+  $variables['random_movie_quote'] = $quotes[array_rand($quotes)];
+
+  // Greet the user if logged in
+  $current_user = \Drupal::currentUser();
+  if ($current_user->isAuthenticated()) {
+    $variables['user_greeting'] = "Hello, " . $current_user->getDisplayName() . "! Enjoy the best movies.";
+  } else {
+    $variables['user_greeting'] = "Welcome, Guest! Sign in to explore more.";
+  }
 }
+
+
