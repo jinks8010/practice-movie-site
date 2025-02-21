@@ -1,5 +1,78 @@
-{{page.header}}
-{{page.content}}
-{{page.content_bottom}}
-{{page.sidebar}}
-{{page.footer}}
+<div id="page-wrapper" class="page-wrapper {{ body_classes }}">
+  <div id="page">
+
+    {# Header Region #}
+    {% if page.header %}
+      <header id="header" class="movie-header">
+        <div class="container">
+          {{ page.header }}
+          <p>{{ user_greeting }}</p>
+        </div>
+      </header>
+    {% endif %}
+
+    <div id="main-wrapper" class="layout-main-wrapper layout-container">
+      <div id="main" class="layout-main">
+        <div class="main-content">
+          <a id="main-content" tabindex="-1"></a>
+
+          {# Content Above (Hero Section or Featured Banner) #}
+          <div class="custom-movie-banner">
+            <h1>{{ site_tagline }}</h1>
+          </div>
+
+          <blockquote>{{ random_movie_quote }}</blockquote>
+
+          <div class="main-content__container container">
+            {# Sidebar and Main Content Layout #}
+            {% if page.sidebar %}
+              <div class="sidebar-grid grid-full">
+                <main role="main" class="site-main">
+                  {{ page.content }}
+                </main>
+                <aside class="site-sidebar">
+                  {{ page.sidebar }}
+                </aside>
+              </div>
+            {% else %}
+              <main role="main">
+                {{ page.content }}
+              </main>
+            {% endif %}
+
+            {# Content Bottom Region #}
+            {% if page.content_bottom %}
+              <div class="content-bottom">
+                {{ page.content_bottom }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {# Footer Region #}
+    {% if page.footer %}
+      <footer class="site-footer">
+        <div class="site-footer__inner container">
+          {{ page.footer }}
+          {# Display custom footer text #}
+          {% if custom_footer_text %}
+            <div class="custom-footer-text">
+              {{ custom_footer_text }}
+            </div>
+          {% endif %}
+        </div>
+      </footer>
+    {% endif %}
+
+  </div>
+</div>
+
+{# Add dark mode class if enabled #}
+{% if enable_dark_mode %}
+  <script>
+    console.log("Dark mode enabled");
+    document.body.classList.add('dark-mode');
+  </script>
+{% endif %}
