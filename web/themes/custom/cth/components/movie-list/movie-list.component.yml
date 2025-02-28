@@ -1,0 +1,5 @@
+type: component
+props:
+  movies:
+    type: array
+    required: true

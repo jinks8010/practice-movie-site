@@ -1,0 +1,6 @@
+type: component
+# Define props (variables passed into the component)
+schema:
+    copyright:
+      type: string
+      required: true

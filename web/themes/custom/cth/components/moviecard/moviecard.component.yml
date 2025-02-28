@@ -1,0 +1,17 @@
+type: component
+props:
+  title:
+    type: string
+    required: true
+  genre:
+    type: string
+    required: true
+  poster_image:
+    type: string
+    required: true
+  release_year:
+    type: string
+    required: true
+  node_url:
+    type: string
+    required: true
