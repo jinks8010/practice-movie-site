@@ -1,0 +1,19 @@
+<div class="movie-list">
+  {% for movie in movies %}
+    {% set entity = movie['#row']._entity %}
+    {% set title = entity.get('field_movie_title').value %}
+    {% set genre = entity.get('field_genre').entity.label %}
+    {% set poster_image_url = entity.get('field_poster_image').entity.uri.value %}
+    {% set poster_image = poster_image_url ? file_url(poster_image_url) : '' %}
+    {% set release_year = entity.get('field_release_year').value %}
+    {% set node_url = '/movie/' ~ title|lower|replace({' ': '-'})|url_encode %}
+
+    {{ include('cth:moviecard', {
+      title: title,
+      genre: genre,
+      poster_image: poster_image,
+      release_year: release_year,
+      node_url: node_url
+    }) }}
+  {% endfor %}
+</div>

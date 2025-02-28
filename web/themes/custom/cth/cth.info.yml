@@ -19,6 +19,14 @@ settings:
   custom_bg_color: '#ffffff'
   enable_dark_mode: false
 
+libraries:
+  - cth/global-styling
+
+single_directory_components:
+  directories:
+    - components
+
+
 
 
 
